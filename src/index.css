@@ -9,3 +9,7 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+#webpack-dev-server-client-overlay {
+  display: none;
+}
