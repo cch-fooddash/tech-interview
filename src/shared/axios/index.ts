@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 export const baseURL = 'https://user-api.dev.fooddash.co.kr';
 
 export const api = axios.create({
-  baseURL: `${baseURL}/api/v4`,
+  baseURL: `${baseURL}/api`,
   timeout: 1000 * 30,
 });
 

@@ -2,7 +2,7 @@ import { api } from '@/shared';
 import { CouponTypes } from '.';
 
 export function findAll({ page, size }: { page: number; size: number }) {
-  return api.get<CouponTypes.CommonListResponse<CouponTypes.Coupon>>(`/coupons/MEMBERSHIP`, {
+  return api.get<CouponTypes.CommonListResponse<CouponTypes.Coupon>>(`/v4/coupons/MEMBERSHIP`, {
     params: {
       size,
       page,
@@ -11,5 +11,5 @@ export function findAll({ page, size }: { page: number; size: number }) {
 }
 
 export function create(data: CouponTypes.CreateCouponRequest) {
-  return api.post(`/coupons/MEMBERSHIP/register`, data);
+  return api.post(`/v1/coupons/MEMBERSHIP/register`, data);
 }
