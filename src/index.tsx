@@ -4,12 +4,14 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 
 import Coupons from '@/pages/coupon';
+import { Toaster } from 'react-hot-toast';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  // <React.StrictMode>
-  <Coupons />
-  // </React.StrictMode>
+  <React.StrictMode>
+    <Coupons />
+    <Toaster />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
