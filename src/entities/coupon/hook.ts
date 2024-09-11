@@ -15,10 +15,3 @@ export function useCoupons() {
 
   return coupons;
 }
-
-export function useCreateCoupon() {
-  /**
-   * TODO:
-   * 쿠폰 생성하는 custom hook을 작성해주세요.
-   */
-}
